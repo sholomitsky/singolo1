@@ -1,0 +1,174 @@
+body {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    width: 940px;
+    margin: 0 auto;;
+}
+
+.portfolio__wrapper {
+    padding-top: 44px;
+}
+
+.portfolio {
+    background-color: #2d303a;
+}
+
+.portfolio__description {
+    padding-top: 2px;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: "Lato", "Verdana", sans-serif;
+    line-height: 18px;
+    font-weight: 900;
+    color: #666d89;
+    text-align: left;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato", "Verdana", sans-serif;
+    font-weight: 300;
+    text-align: left;
+    margin: 0;
+}
+
+.portfolio__tags {
+    padding-top: 13px;
+    padding-bottom: 4px;
+}
+
+.portfolio__first-span {
+    padding-right: 2px;
+}
+
+.portfolio__second-span, .portfolio__fourth-span {
+    padding-left: 1px;
+}
+.tag {
+    text-decoration: none;
+    font-size: 12px;
+    color: #767e9e;
+    font-family: "Lato", "Verdana", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 1px;
+    margin-right: 9px;
+    padding: 3px 3px 2px 6px;
+    cursor: pointer;
+}
+
+.tag:hover {
+    font-size: 14px;
+}
+
+.tag--selected {
+    border-radius: 5px;
+    color: #dedede;
+    border: 1px solid #c5c5c5;
+}
+
+.tag--bordered {
+    border-radius: 5px;
+    border: 1px solid #666d89;
+}
+
+.portfolio__img {
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 18px 0 66px 0;
+    overflow: hidden;
+}
+
+.portfolio__img img {
+    width: 220px;
+    height: 187px;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.portfolio__bottom {
+    height: 7px;
+    background-color: #323746;
+}
+
+h3 {
+    font-size: 18px;
+    color: #666d89;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    margin: 0;
+}
+
+.about-us {
+    background-color: #f2f2f2;
+}
+
+.about-us__wrapper {
+    padding-top: 43px;
+    padding-bottom: 45px;
+}
+
+.about-us__description {
+    padding-bottom: 45px;
+    padding-top: 2px;
+}
+
+.layout-3-column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.employee {
+    text-align: left;
+}
+
+.employee>img {
+    width: 300px;
+    height: 300px;
+    padding-right: 20px;
+    padding-bottom: 11px;
+}
+
+.employee__about {
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    padding-top: 8px;
+    margin: 0;
+}
+
+.about-us__contacts {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 155px;
+    padding: 5px 0 0 0px;
+}
+
+.about-us__contacts li {
+    list-style-type: none;
+}
+
+.about-us__contacts img {
+    width: 34px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.about-us__bottom {
+    height: 6px;
+    background-color: #ffffff;
+}
