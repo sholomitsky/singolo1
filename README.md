@@ -1,1 +1,1 @@
-# singolo
+ https://sholomitsky.github.io/singolo/
