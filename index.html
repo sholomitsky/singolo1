@@ -10,31 +10,38 @@
 </head>
 
 <body>
-  <header>
+  <header id="home" class="header">
     <div class="container">
-      <h1>Singolo</h1>
-      <div class="container">
-      <nav class="header-nav">
-        <ul>
-          <li><span class="active">Home</span></li>
-          <li><span>Services</span></li>
-          <li><span>Portfolio</span></li>
-          <li><span>About</span></li>
-          <li><span>Contact</span></li>
-        </ul>
-      </nav>
-      </div>
+        <div class="header-wrapper">
+            <h1 class="header-insert">Singolo<span>*</span></h1>
+            <nav class="header-insert">
+                <ul id="menu">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
   </header>
-  <section class="slider">
-    <div class="container">
-      <img src="./assets/img/prev.svg" class="arrow arrow-prev" alt="prev">
-      <img class="vertical" src="./assets/img/iPhoneVertical.svg" alt="iPhoneVertical">
-      <img class="horizontal" src="./assets/img/iPhoneHorizontal.svg" alt="iPhoneHorizontal">
-      <img src="./assets/img/next.svg" class="arrow arrow-next" alt="next">
+  <div class="slider" id="slider">
+    <div class="slider-phone first">
+        <img id="phone-first" src="assets/img/iphone_ver.png" alt="#">
+        <img src="assets/img/Shadow_v.png" alt="#">
+        <img id="phone-second" src="assets/img/iphone_hor.png" alt="#">
+        <img src="assets/img/Shadow_h.png" alt="#">
+        <img class = "turn-off-first" id="first" src="assets/img/Screen-first.png" alt="#">
+        <img class = "turn-off-second" id="second" src="assets/img/Screen-second.png" alt="#">
     </div>
-  </section>
-  <section class="services">
+    <div class="slider-phone second">
+        <img src="assets/img/Slider.png" alt="#">
+    </div>
+          
+  </div>
+
+  <section id="services" class="services">
     <div class="container">
       <h2>Our Services</h2>
       <p class="services-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
@@ -92,44 +99,42 @@
   </section>
 
   
-  <section class="portfolio">
+  <section id="portfolio" class="portfolio">
     <div class="wrapper portfolio__wrapper">
         <h2>Portfolio</h2>
         <p class="portfolio__description description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-        <div class="portfolio__tags">
-            <a class="tag tag--selected" href="#">
-                <span class="portfolio__first-span">All</span>
-            </a>
-            <a class="tag tag--bordered" href="#">
-                <span class="portfolio__second-span">Web Design</span>
-            </a>
-            <a class="tag tag--bordered" href="#">
-                <span>Graphic Design</span>
-            </a>
-            <a class="tag tag--bordered" href="#">
-                <span class="portfolio__fourth-span">Artwork</span>
-            </a>
+        <div class="portfolio__tags" id="tags">
+          <span class="tag tag_not-selected">All</span>           
+          <span class="tag tag_not-selected">Web Design</span>           
+          <span class="tag tag_not-selected">Graphic Design</span>           
+          <span class="tag tag_not-selected">Artwork</span>
         </div>
-        <div class="portfolio__img">
-            <img src="assets/img/1.png" alt="boat">
-            <img src="assets/img/2.png" alt="green_girl">
-            <img src="assets/img/3.png" alt="city">
-            <img src="assets/img/4.png" alt="avon__robot">
-
-            <img src="assets/img/5.png" alt="animals">
-            <img src="assets/img/6.png" alt="boxes">
-            <img src="assets/img/7.png" alt="img7">
-            <img src="assets/img/8.png" alt="hens">
-
-            <img src="assets/img/9.png" alt="dragoni">
-            <img src="assets/img//10.png" alt="letters">
-            <img src="assets/img/portfolio-11.png" alt="dragoni2">
-            <img src="assets/img/12.png" alt="wall">                
+        <div class="portfolio__works" id="portfolio_wrap">
+          <div class="portfolio__photo" id="border">
+            <img src="assets/img/1.png" alt="#">
+            <img src="assets/img/2.png" alt="#">
+            <img src="assets/img/3.png" alt="#">
+          </div>  
+          <div class="portfolio__photo" id="border">
+            <img src="assets/img/4.png" alt="#">
+            <img src="assets/img/5.png" alt="#">
+            <img src="assets/img/6.png" alt="#">
+          </div>
+          <div class="portfolio__photo" id="border">
+            <img src="assets/img/7.png" alt="#">
+            <img src="assets/img/8.png" alt="#">
+            <img src="assets/img/9.png" alt="#">
+          </div>
+          <div class="portfolio__photo" id="border">
+            <img src="assets/img//10.png" alt="#">
+            <img src="assets/img/portfolio-11.png" alt="#">
+            <img src="assets/img/12.png" alt="#">   
+          </div>             
         </div>
     </div>
-    <div class="portfolio__bottom"></div>
 </section>
-<section class="about-us">
+
+<section id="about" class="about-us">
     <div class="wrapper about-us__wrapper">
         <h2>About Us</h2>
         <p class="about-us__description description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
@@ -200,15 +205,16 @@
     <div class="about-us__bottom"></div>
 </section>
 <div class="wrappera">
-    <section class="get_a_quote">
+    <section id="contact" class="get_a_quote">
         <h2>Get a Quote</h2>
         <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
         
-        <form>
+        <form id="form">
            <p><input type="text" name="name" placeholder="Name(Required)" required /></p>
            <p><input type="email" name="email" placeholder="Email(Required)" required /></p>
-           <p><input type="text" name="subject" placeholder="Subject"></p>
-           <textarea rows="13" name="descritrion" placeholder="Describe your project in detail..."></textarea>
+           <p><input id="subject" type="text" name="subject" placeholder="Subject"></p>
+           <textarea id="textarea_message" name="descritrion" placeholder="Describe your project in detail..."></textarea>
+           <button id="btn" class="button">Submit</button>
         </form>
 
         <div class="contact">
@@ -225,6 +231,13 @@
             </div>
 
         </div>
+        <div id= "pop-up_form" class="hidden">
+          <div id="message">
+              <p id="result">Текст</p>
+              <br/>
+              <button id="close-btn">OK</button>
+          </div>
+        </div> 
 
     </section>
 
@@ -238,7 +251,9 @@
         </div>
     </footer>
     
+    
 </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
